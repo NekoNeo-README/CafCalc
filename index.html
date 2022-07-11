@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>HowMeEnergy</title>
+
+
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <!--Coffe consumption form-->
+    <h1  class="title-text" id="title-text-id">HowMeCoffee</h1>
+    <div class="coffee-form" id="coffee-form-id">
+        <div class="coffee-form-inside" id="coffee-form-inside-id">
+            <p class="form-subtitle">Drop some info here</p>
+            
+            <input placeholder="name">
+            <input placeholder="height (cm)">
+            <input placeholder="weight (kg)">
+
+            <p class="form-subtitle">Add Drinks</p>
+
+            <select id="coffee-types-id" name="coffee-types">
+                <option value="espresso">Espresso</option>
+                <option value="doppio">Doppio</option>
+                <option value="americano">Americano</option>
+                <option value="cappucino">Cappucino</option>
+                <option value="latte">Latte</option>
+                <option value="mocha">Mocha</option>
+                <option value="flat-white">Flat White</option>
+                <option value="macchiato">Macchiato</option>
+                <option value="con-panna">Con Panna</option>
+                <option value="affogato">Affogato</option>
+                <option value="irish-coffee">Irish coffee</option>
+            </select>
+
+
+            <button id="add-drink-id" class="add-drink" onclick="add_drink()">Add Drink</button>
+
+            <ul id="drink-list-id" class="drink-list"></ul>
+            
+            <button id="show-results-id" class="show-results" onclick="submit_form()">Show Results</button>
+        </div>
+    </div>
+
+    <div class="results" id="results-id">
+      <div class="results-inside" id="results-inside-id">
+          <p class="form-subtitle">Form Results:</p>
+          <div id="result-caf"></div>
+          <div id="result-alc"></div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="coffee-types.json"></script>
+	  <script src="script.js"></script>
+  </body>
+
+</html>

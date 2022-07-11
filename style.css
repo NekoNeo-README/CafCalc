@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Inconsolata:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+html, body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    --placeholder-color: #3A3845;
+}
+
+body{
+    background-color: #F7CCAC;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text{
+    font-weight: 300;
+    
+}
+
+.coffee-form{
+    
+    width: 80%;
+    height: auto;
+    background-color: #C69B7B;
+    box-shadow: 15px 15px #826F66;
+}
+
+.coffee-form-inside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-subtitle{
+    font-size: x-large;
+    font-weight: 300;
+    color:#342d29;
+}
+
+.coffee-form-inside > input{
+    margin-bottom: 3%;
+    width: 55%;
+    height: 40px;
+    border-style: none;
+    padding-left: 2%;
+    background-color: #8b715d;
+    color: rgba(0, 0, 0, 0.579);
+    outline: none;
+}
+
+.coffee-form-inside > select{
+    margin-bottom: 3%;
+    width: 40%;
+    height: 40px;
+    border-style: none;
+    padding-left: 2%;
+    background-color: #8b715d;
+    color: rgba(0, 0, 0, 0.579);
+    outline: none;
+    
+}
+::placeholder {
+    color: var(--placeholder-color);
+    opacity: 0.7;
+}
+:-ms-input-placeholder { 
+    color: var(--placeholder-color);
+}
+::-ms-input-placeholder { 
+    color: var(--placeholder-color);
+}
+
+.coffee-form-inside > button{
+    margin-bottom: 3%;
+    width: 20%;
+    height: 40px;
+    border-style: none;
+    background-color: #8b715d;
+    color: rgba(0, 0, 0, 0.579);
+    outline: none;
+    border-radius: 3px;
+}
+
+.coffee-form-inside .show-results{
+    margin-top:5%;
+    margin-bottom: 3%;
+    width: 40%;
+    height: 40px;
+    border-style: none;
+    background-color: #8b715d;
+    color: rgba(0, 0, 0, 0.579);
+    outline: none;
+}
+
+.drink-list{
+    display: flex;
+    flex-direction: column;
+}
+
+.results  .form-subtitle{
+    margin-top: 50px;
+}
+
+.results-inside{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    position: relative;
+    width: 98%;
+    height:20px;
+    background-color: var(--placeholder-color);
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 5px 5px #826F66;
+}
